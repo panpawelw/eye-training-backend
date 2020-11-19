@@ -16,8 +16,6 @@ speed-measure-plugin*.json
 
 # IDEs and editors
 /.idea
-.project
-.classpath
 .c9/
 *.launch
 .settings/
@@ -44,3 +42,30 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+HELP.md
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
