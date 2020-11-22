@@ -8,6 +8,6 @@ public class EyeTrainingApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EyeTrainingApplication.class, args);
+    System.out.println("Eye Training app here!");
 	}
-
 }
