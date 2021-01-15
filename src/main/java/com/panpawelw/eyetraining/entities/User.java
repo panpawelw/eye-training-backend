@@ -1,10 +1,20 @@
 package com.panpawelw.eyetraining.entities;
 
-public class user {
+import javax.persistence.*;
 
+@Entity
+@Table(name = "users")
+public class User {
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   long id;
+
   String name;
+
+  @Column(unique=true)
   String email;
+
   String password;
 
   public long getId() {
