@@ -12,6 +12,8 @@ public class HighScore {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
 
+  private long score;
+
   private String userName;
 
   private int time;
@@ -19,8 +21,9 @@ public class HighScore {
   public HighScore() {
   }
 
-  public HighScore(long id, String userName, int time) {
+  public HighScore(long id, long score, String userName, int time) {
     this.id = id;
+    this.score = score;
     this.userName = userName;
     this.time = time;
   }
@@ -31,6 +34,14 @@ public class HighScore {
 
   public void setId(long id) {
     this.id = id;
+  }
+
+  public long getScore() {
+    return score;
+  }
+
+  public void setScore(long score) {
+    this.score = score;
   }
 
   public String getUserName() {
