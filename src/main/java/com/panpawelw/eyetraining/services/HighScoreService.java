@@ -18,4 +18,8 @@ public class HighScoreService {
   public List<HighScore> getAllHighScores() {
     return highScoreRepository.findAll();
   }
+
+  public boolean saveHighScore(HighScore highScore) {
+    return highScoreRepository.saveAndFlush(highScore).getId() != 0;
+  }
 }
