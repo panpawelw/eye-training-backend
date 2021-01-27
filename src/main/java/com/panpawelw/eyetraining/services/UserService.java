@@ -23,7 +23,7 @@ public class UserService {
     return user.orElse(null);
   }
 
-  public void SaveUser(User user) throws DataIntegrityViolationException {
+  public void saveUser(User user) throws DataIntegrityViolationException {
     userRepository.saveAndFlush(user);
   }
 }
