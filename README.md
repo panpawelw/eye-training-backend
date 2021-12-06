@@ -1,1 +1,1 @@
-Springboot + Angular + PostgreSQL project
+Springboot + PostgreSQL project
